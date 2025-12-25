@@ -1,0 +1,19 @@
+# Example configuration for HyperLiquid (local)
+general:
+  # simulated = paper exchange in-process; hyperliquid = ccxt + HYPERLIQUID_PRIVATE_KEY
+  exchange: simulated
+  dry_run: true
+  base_currency: USD
+  starting_balance: 10000.0
+  max_leverage: 10
+trading:
+  symbol: BTC-USD
+  # hyperliquid_symbol: BTC/USDC:USDC   # optional; default maps BTC-USD → BTC/USDC:USDC
+  # hyperliquid_testnet: false
+  risk_per_trade_pct: 1.0
+  mode: moderate   # conservative | moderate | aggressive
+ai:
+  model: placeholder
+  temperature: 0.2
+notifications:
+  telegram: {}
